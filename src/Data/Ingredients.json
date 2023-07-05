@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "Name": "Wheat flour",
+    "PreparationInstructions": "Sieve. Add to other ingredients."
+  },
+  {
+    "Id": 2,
+    "Name": "Coconut flour",
+    "PreparationInstructions": "Sieve. Add to other ingredients."
+  },
+  {
+    "Id": 3,
+    "Name": "Butter",
+    "PreparationInstructions": "Melt on low heat. Add to other ingredients."
+  },
+  {
+    "Id": 4,
+    "Name": "Chocolate",
+    "PreparationInstructions": "Melt in a water bath. Add to other ingredients."
+  },
+  {
+    "Id": 5,
+    "Name": "Sugar",
+    "PreparationInstructions": "Add to other ingredients."
+  },
+  {
+    "Id": 6,
+    "Name": "Cardamom",
+    "PreparationInstructions": "Take half a teaspoon. Add to other ingredients."
+  },
+  {
+    "Id": 7,
+    "Name": "Cinnamon",
+    "PreparationInstructions": "Take half a teaspoon. Add to other ingredients."
+  },
+  {
+    "Id": 8,
+    "Name": "Cocoa powder",
+    "PreparationInstructions": "Add to other ingredients."
+  }
+]
