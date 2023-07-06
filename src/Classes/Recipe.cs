@@ -5,7 +5,12 @@ namespace cookie_cookbook.Classes;
 
 public class Recipe : AbstractRecipe
 {
-	private readonly Parser _parser = new Parser();
+	private readonly Parser _parser;
+
+	public Recipe(Parser parser)
+	{
+		_parser = parser;
+	}
 
 	public override List<int> HandleIngredientsAdding(List<Ingredient> ingredients)
 	{

@@ -11,11 +11,23 @@ public class Cookbook : AbstractCookbook
 	private const FileFormat FileFormat = Enums.FileFormat.Txt;
 	private const string FilePath = $"./{FileName}";
 
-	private readonly IngredientsRepository _ingredientsRepository = new IngredientsRepository();
-	private readonly RecipeRepository _recipeRepository = new RecipeRepository();
-	private readonly Recipe _recipe = new Recipe();
+	private readonly IngredientsRepository _ingredientsRepository;
+	private readonly RecipeRepository _recipeRepository;
+	private readonly Recipe _recipe;
 
 	private List<int> _recipeIngredients = new List<int>();
+
+	public Cookbook
+		(
+			IngredientsRepository ingredientsRepository, 
+			RecipeRepository recipeRepository, 
+			Recipe recipe
+		)
+	{
+		_ingredientsRepository = ingredientsRepository;
+		_recipeRepository = recipeRepository;
+		_recipe = recipe;
+	}
 
 	public override void Open()
 	{
@@ -46,5 +58,6 @@ public class Cookbook : AbstractCookbook
 	public override void Close()
 	{
 		Console.WriteLine("Press any key to exit.");
+		Console.ReadKey();
 	}
 }
